@@ -14,7 +14,7 @@ async function Nav() {
       </Link>
       <ul className='flex items-center gap-6'>
         {!session?.user && <Login />}
-        {session?.user && <Logged session={session.user} />}
+        {session?.user && <Logged user={session.user} />}
       </ul>
     </nav>
   );
